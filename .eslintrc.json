@@ -29,6 +29,7 @@
         "no-use-before-define":"off",
         "semi":"off",
         "space-before-function-paren":"off",
-        "no-unused-vars":"warn"
+        "no-unused-vars":"warn",
+        "node/no-path-concat":"off"
     }
 }
