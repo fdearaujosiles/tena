@@ -9,23 +9,23 @@ import { HashRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 const App: React.FC = () => {
 
-    const env = () => {
-        console.log(process.env)
-    }
-
     return <Router>
         <CssBaseline></CssBaseline>
         <nav className={styles.Nav}>
-            <Link className={styles.Link} to="/">Home</Link>
-            <Link className={styles.Link} to="/water">Health</Link>
-            <Link className={styles.Link} to="/finances">Finances</Link>
+            <span className={styles.Title} >Tena</span>
+            <div className={styles.Links} >
+                <Link className={styles.Link} to="/">Home</Link>
+                <Link className={styles.Link} to="/water">Health</Link>
+                <Link className={styles.Link} to="/finances">Finances</Link>
+            </div>
         </nav>
-        <Button onClick={env}>CLICK ME</Button>
-        <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/water" component={Water} />
-            <Route exact path="/finances" component={Finances} />
-        </Switch>
+        <div className={styles.Content} >
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/water" component={Water} />
+                <Route exact path="/finances" component={Finances} />
+            </Switch>
+        </div>
     </Router>
 }
 

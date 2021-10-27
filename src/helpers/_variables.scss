@@ -1,0 +1,16 @@
+$colorPrimary: #372f50;
+$colorWhite: white;
+$colorSecondary: #161322;
+$colorBg: #222;
+
+%Flex-SpaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%Flex-Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
