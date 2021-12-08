@@ -13,6 +13,7 @@ function App() {
         >
           Learn React
         </a>
+        <span>Oh Yeah</span>
       </header>
     </div>
   );
